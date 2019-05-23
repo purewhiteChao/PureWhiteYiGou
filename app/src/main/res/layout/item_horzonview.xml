@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_horzonview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/superfire_horzonview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/img_home_superfire"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/superfire_horzonview"/>
+    <TextView
+        android:id="@+id/superfire_horzonview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="超级爆款"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+        android:id="@+id/more_horzonview"
+        app:layout_constraintTop_toTopOf="@id/superfire_horzonview"
+        app:layout_constraintBottom_toBottomOf="@id/superfire_horzonview"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更多"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_item_horzon"
+        app:layout_constraintTop_toBottomOf="@+id/superfire_horzonview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

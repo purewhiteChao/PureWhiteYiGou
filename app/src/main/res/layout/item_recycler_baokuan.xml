@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp">
+
+    <ImageView
+        android:id="@+id/image_item_baokuan"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/title_item_baokuan"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toLeftOf="@+id/image_item_baokuan"
+        app:layout_constraintTop_toBottomOf="@+id/image_item_baokuan" />
+    <TextView
+        android:id="@+id/priceafter_item_baokuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/title_item_baokuan"
+        app:layout_constraintLeft_toLeftOf="@id/title_item_baokuan"/>
+    <TextView
+        android:id="@+id/pricebefore_item_baokuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_overline"
+        app:layout_constraintRight_toRightOf="@id/title_item_baokuan"
+        app:layout_constraintTop_toBottomOf="@+id/title_item_baokuan"/>
+</android.support.constraint.ConstraintLayout>

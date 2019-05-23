@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home" android:title="首页" android:icon="@drawable/img_main_home_normal"/>
+    <item android:id="@+id/menu_classify" android:title="分类" android:icon="@drawable/img_main_mingpin_normal"/>
+    <item android:id="@+id/menu_today" android:title="今日免单" android:icon="@drawable/img_freeevery_normal"/>
+    <item android:id="@+id/menu_college" android:title="商学院" android:icon="@drawable/img_main_discover_normal"/>
+    <item android:id="@+id/menu_me" android:title="我的" android:icon="@drawable/img_main_me_normal"/>
+</menu>

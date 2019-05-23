@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerleft_classify"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:src="@drawable/img_home_fire_bottom_bg"
+        android:scaleType="fitXY"
+        android:id="@+id/image_classify"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintHeight_percent="0.2"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintLeft_toRightOf="@+id/recyclerleft_classify"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclergood_classify"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image_classify"
+        app:layout_constraintLeft_toLeftOf="@id/image_classify"
+        app:layout_constraintWidth_percent="0.7"
+        android:layout_marginTop="@dimen/dp_20"></android.support.v7.widget.RecyclerView>
+</android.support.constraint.ConstraintLayout>

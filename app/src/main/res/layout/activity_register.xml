@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbarRegister"
+        android:background="@color/colorGrey">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_back_register"
+            android:src="@drawable/back_webview"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbarRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="用户名："
+        android:id="@+id/tvNameReg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"/>
+
+    <EditText
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvNameReg"
+        app:layout_constraintBottom_toBottomOf="@id/tvNameReg"
+        app:layout_constraintLeft_toRightOf="@id/tvNameReg"
+        android:id="@+id/edit_username_register"
+        android:hint="请输入用户名"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvNameReg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="密  码："
+        android:id="@+id/tvPwdReg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"/>
+
+    <EditText
+        android:layout_width="@dimen/dp_280"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvPwdReg"
+        app:layout_constraintBottom_toBottomOf="@id/tvPwdReg"
+        app:layout_constraintLeft_toRightOf="@id/tvPwdReg"
+        android:id="@+id/edit_password_register"
+        android:hint="请输入密码"
+        android:inputType="numberPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPwdReg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="确认密码："
+        android:id="@+id/tvConfirmPwdReg"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"/>
+
+    <EditText
+        android:layout_width="@dimen/dp_260"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvConfirmPwdReg"
+        app:layout_constraintBottom_toBottomOf="@id/tvConfirmPwdReg"
+        app:layout_constraintLeft_toRightOf="@id/tvConfirmPwdReg"
+        android:id="@+id/edit_repassword_register"
+        android:hint="请确认密码"
+        android:inputType="numberPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_repassword_register"
+        android:text="注册"
+        android:layout_marginTop="@dimen/dp_50"
+        android:id="@+id/btn_register_register"/>
+
+</android.support.constraint.ConstraintLayout>
